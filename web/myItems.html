@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>On Second Thought Consignment Store and Boutique Swapping</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' type='text/css' href='main.css'>
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <!--Header with logo and title-->
+            <header>
+                <div class="headerSection">
+                    <img src="images/on_second_thought.png" alt="logo" id="logo">
+                    <h1>Where swapping is a pleasure</h1>
+                    <h6>Welcome, name-of-login-person</h6>
+                </div>
+            </header>
+
+            <!--Navigation bar on top-->
+            <nav class="upper_nav">
+                <ul class="upper_list">
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="myItems.html">My Shop</a></li>
+                    <li><a href="myItems.html">My Swaps</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </nav>
+
+            <!--Body content with navigation on left and main body on right -->
+            <div class="bodyColumn">
+                <!--navigation-->
+                <div class="navColumn">
+                    <nav class="side_nav">
+                        <ul class="side_list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="categories.html">Categories</a></li>
+                            <li><a href="#">Store</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!--the main body-->
+                <div class="mainColumn">
+                    <section class="main_body">
+                        <h3 class='greenSubheading'>Your items for Swap</h3>
+                        <table id='myItemTable'>
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Category</th>
+                                    <th>My Ratings</th>
+                                    <th>Swapped</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="images/baby_girl_headband.jpg" class='myItemTableImage' alt="headband">
+                                    </td>
+                                    <td>Baby and Children</td>
+                                    <td>
+                                        <div class="myItemsRatingOuter">
+                                            <span class="myRating checked"></span>
+                                            <span class="myRating"></span>
+                                            <span class="myRating"></span>
+                                            <span class="myRating"></span>
+                                            <span class="myRating"></span>
+                                        </div>
+                                    </td>
+                                    <td><a href='#'><img src="images/refresh.png" class='swapCheck_Button' alt='swap available'></a></td>
+                                    <td><a href="item.html" class='yesOrNoButton'>Update</a> </td>
+                                    <td><a href="myItems.html" class='yesOrNoButton'>Delete</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src='images/man_brown_shoes.jpg' class='myItemTableImage' alt='brown shoes'></td>
+                                    <td>Man's Clothing and Accessories</td>
+                                    <td> <div class="myItemsRatingOuter">
+                                            <span class="myRating checked"></span>
+                                            <span class="myRating checked"></span>
+                                            <span class="myRating checked"></span>
+                                            <span class="myRating"></span>
+                                            <span class="myRating"></span>
+                                        </div></td>
+                                    <td><a href='#'><img src="images/green_check_icon.jpg" class='swapCheck_Button' alt='already swapped'></a></td>
+                                    <td><a href="item.html" class='yesOrNoButton'>Update</a> </td>
+                                    <td><a href="myItems.html" class='yesOrNoButton'>Delete</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src='images/woman_earrings.jpg' class='myItemTableImage' alt='diamond earrings'></td>
+                                    <td>Woman's Clothing and Accessories</td>
+                                    <td> <div class="myItemsRatingOuter">
+                                            <span class="myRating checked"></span>
+                                            <span class="myRating checked"></span>
+                                            <span class="myRating"></span>
+                                            <span class="myRating"></span>
+                                            <span class="myRating"></span>
+                                        </div></td>
+                                    <td><a href='#'><img src="images/green_check_icon.jpg" class='swapCheck_Button'  alt='already swapped'></a></td>
+                                    <td><a href="item.html" class='yesOrNoButton'>Update</a> </td>
+                                    <td><a href="myItems.html" class='yesOrNoButton'>Delete</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src='images/baby_boy_boots.jpg' class='myItemTableImage' alt='baby boy boots'></td>
+                                    <td>Baby's clothing and Accessories</td>
+                                    <td><div class="myItemsRatingOuter">
+                                            <span class="myRating checked"></span>
+                                            <span class="myRating checked"></span>
+                                            <span class="myRating checked"></span>
+                                            <span class="myRating checked"></span>
+                                            <span class="myRating"></span>
+                                        </div>
+                                    </td>
+                                    <td><a href='#'><img src="images/refresh.png" class='swapCheck_Button' alt='swap available'></a></td>
+                                    <td><a href="item.html" class='yesOrNoButton'>Update</a> </td>
+                                    <td><a href="myItems.html" class='yesOrNoButton'>Delete</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p class='legend'>Legend: <img src='images/refresh.png' width='20' height='20' alt='swap item'> Swap offer available.
+                            <img src='images/green_check_icon.jpg' width='20' height='20' alt='already swap'> Already swapped
+                        </p>    
+                    </section>
+                </div>
+            </div>
+
+            <!--footer-->
+            <footer>
+                <h6>
+                    &#169; Teena's On Second Thought Consignment Store and Boutique Swap Inc
+                </h6>
+            </footer>
+        </div>
+    </body>
+</html>

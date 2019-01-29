@@ -1,0 +1,454 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 29, 2018, 1:26:29 PM
+    Author     : teena
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height:100%;  
+    background: #fbf8fb;
+    font-size: 1.4vw;  
+}
+
+.wrapper{
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    
+    position: relative; 
+    height: 100%;
+}
+
+
+.headerSection{
+    background: #fbf8fb;
+    margin: auto;
+    width:100%;
+    height: 50%;  
+}
+
+#logo{
+    display: block;
+    margin: 20px auto auto auto;
+    width: 20%;   
+}
+
+
+.headerSection h1{   
+    position: relative;  
+    margin-top: 0px;  
+    text-align: center;   
+    font-family: 'Dancing Script', cursive;
+    font-size: 5vw; 
+    opacity: .4;  
+    color: #845b7e; 
+}
+
+
+.headerSection h6{ 
+    display: block;  
+    position: relative;
+    text-align: right;  
+    top: 14px; 
+    right: 20px; 
+    font-size: 1.8vw; 
+}
+
+
+a{
+    color: #845b7e; 
+    text-decoration: none; 
+}
+
+a:hover{
+    color:  #222; 
+}
+
+ul.upper_list{
+    list-style-type: none; 
+      position: relative; 
+    width: 100%;
+}
+
+nav.upper_nav{
+    position: relative; 
+    width: 100%;
+    background: #fce4f5; 
+    padding: 10px 0px;  
+}
+
+.upper_list { 
+    padding-left: 300px; 
+}
+
+.upper_list li{
+
+    display: inline; 
+    padding: 10px; 
+}
+
+.bodyColumn{
+    display: flex;
+}
+
+.navColumn{
+    background:#eee9f0;
+    flex-basis: 15%;
+}
+
+.mainColumn{
+    flex-basis: 85%;
+    background: #faf8fb;
+}
+
+.main_body{
+    overflow-x:auto;
+    padding-top: 8px; 
+    padding-left: 25px; 
+}
+
+.side_list li{ 
+    list-style-type: none; 
+    padding: 25px; 
+}
+
+footer{ 
+    position: relative;  
+    float: left;  
+    bottom: 0px;
+    width: 100%; 
+    height: 25%; 
+    background: #eee9f0;
+}
+
+footer h6{
+   text-align: center;  
+}
+
+.index_main_picture{
+   float: left; 
+   max-width: 100%;
+   max-height: 100%;
+}
+
+.mainInformation{
+    position: relative; 
+    float: right; 
+    max-width: 580px;
+}
+
+ol.howToGetStartedList{
+    font-size: 1.5vw;  
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #90dcbe;  
+}
+
+.category_items{
+    height: 80px; 
+    max-width:80px;
+}
+
+.category_table td{
+    padding: 20px; 
+}
+
+.greenSubheading{
+    font-family: 'Gloria Hallelujah', cursive;
+    text-decoration: underline; 
+     color: #90dcbe;
+}
+
+.itemBody{
+    display:flex;
+    padding: 5px; 
+}
+
+.itemImageColumn{
+    flex-basis: 30%;
+    position: relative;
+    float: left;  
+}
+.itemDescriptionColumn{
+     flex-basis: 50%;
+     position: relative;
+    float: right; 
+    padding-left: 20px;
+    text-align: left;  
+}
+
+.itemRating{
+    position: relative;
+    float:left; 
+    margin-top: 0px;  
+    text-align: center;   
+}
+
+.itemRating p{
+    position: absolute;  
+    margin-top:-15px; 
+    margin-left:10px;  
+}
+
+.rating.itemRating{
+    margin-top:0px;  
+}
+
+.myRating, .checked{
+    padding: 2px;  
+}
+.myRating::before{
+    border:solid 3px;  
+    color: #90dcbe; 
+    content: '\2606';
+}
+.checked::before{
+    content: '\2605'; 
+}
+.myRating{
+    opacity: 0.3;  
+}
+.checked{
+    color: #90dcbe; 
+    opacity: 1; 
+}
+
+.rating{
+    display: flex; 
+    flex-flow: row-reverse;
+}
+
+.star{
+    padding:  2px;  
+}
+
+.star::before{
+    border:solid 3px;  
+    color: #90dcbe; 
+    content: '\2606';
+    cursor:pointer; 
+}
+
+.rating > span:hover::before,
+.rating > span:hover ~ span:before {
+    color: #90dcbe; 
+    content: '\2605';
+    cursor:pointer; 
+}
+
+#myItemTable{
+    
+    border-collapse:collapse;
+}
+.myItemTableStyle{
+    
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#myItemTable td{
+    padding: 20px;   
+}
+
+th{
+    font-size: 1.5vw;  
+}
+tr.row_border{
+    border-bottom: none; 
+}
+tr {
+  border-bottom: solid 3px black;
+}
+
+
+
+
+.myItemTableImage{
+    max-height: 200px;
+    
+    max-width: 200px; 
+}
+
+.swapCheck_Button{  
+    max-width: 50px;
+    max-height: 43px;  
+}
+
+a.yesOrNoButton{
+    color: white;
+    font-weight:bold;  
+    background: #90dcbe;
+    padding: 10px 20px; 
+    border-radius: 15px;
+    box-shadow: 0px 0px 1px 1px  #90dcbe; 
+}
+
+.legend{
+    font-size: 1.3vw; 
+}
+
+.mainBody_Parent{
+    display: flex;   
+}
+.mainBody_left{
+    background:#faf8fb;
+    position: relative;  
+    flex-basis: 50%;
+    float: left; 
+    margin: 10px 0px 0px 10px;  
+}
+
+.mainBody_right{
+    background:#faf8fb;
+    position: relative;  
+    flex-basis: 50%;
+    float: left; 
+    margin: 10px 10px 0px 50px;   
+}
+
+.greenHeading{
+    padding: 0px;
+    margin: 0px;  
+    font-size: 1.5vw;  
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #90dcbe; 
+}
+
+.aboutUs .greenHeading{
+    display:inline-block;      
+}
+.aboutUs p{
+    display: inline;    
+}
+
+.mainBody_left .greenHeading{
+   display: inline;  
+}
+
+.mainBody_left p{
+    margin-top: 0;  
+    margin-bottom: 50px;  
+} 
+
+.mainBody_right .greenHeading{
+   display: inline;  
+}
+
+.mainBody_right p{
+    margin-top: 0;  
+     margin-bottom: 50px;  
+} 
+
+.swapBody_Parent{
+    display: flex;   
+}
+.swapBody_left{
+    background:#faf8fb;
+    flex-basis: 30%; 
+    margin: 50px 20px 80px 80px; 
+}
+
+.swapBody_right{
+    background:#faf8fb;
+    flex-basis: 50%;
+    margin: 50px 50px 80px 0px; 
+}
+
+.swapPicture{
+max-width: 100%;
+height: auto; 
+}
+
+.swapAvailableList{
+    border: 2px #fce4f5 solid;  
+    border-width: 5px;
+    margin-top: -10px;
+    background: white;  
+    width: auto;  
+    height: auto;  
+}
+
+.listedHeading{
+     font-family: 'Gloria Hallelujah', cursive;
+     font-size: 1.5vw;  
+}
+
+input[type=submit]{
+        color: white;
+    font-weight:bold;  
+    background: #90dcbe;
+    padding: 10px 20px; 
+    border-radius: 15px;
+    box-shadow: 0px 0px 1px 1px  #90dcbe; 
+    
+}
+
+.swapImageButton{
+    position: relative;
+    display: block; 
+    max-width: 50%;
+    height: auto; 
+}
+
+.signin_outer{
+    width: 300px; 
+   margin-top: 100px; 
+   margin-left: 30%;
+   margin-right: 70%; 
+   margin-bottom: 100px; 
+}
+
+.registrationForm{
+    margin: 5% 0 0 5%;
+    width:50%;
+    
+}
+.registrationForm input, .login input{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.smallHeader{
+    margin: 0;
+    padding:0;
+    font-family: 'Gloria Hallelujah', cursive;
+     color: #90dcbe; 
+     font-size: 1.5vw;  
+}
+
+.userAvgRating{
+    display: flex; justify-content: flex-end ;
+    padding: 0px; 
+    margin: 0px;  
+}
+
+.avgItemRating{
+    display: flex; justify-content:flex-start;
+    padding: 0px; 
+    margin: 0px;  
+}
+
+h5{
+    text-align: right;  
+}
+
+.welcome_user{
+    padding: 0px;
+    margin: 0px;  
+}
+
+p.text_heading{
+    padding:0px;
+    margin:0px;  
+}
